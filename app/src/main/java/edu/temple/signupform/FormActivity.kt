@@ -20,7 +20,7 @@ class FormActivity : AppCompatActivity() {
             var validFields: Boolean = CheckAllFields(nameField, emailField, passwordField, passwordFieldConfirm)
 
             if (validFields){
-                var toastString = "Hello ".plus(nameField.text).plus(" to the SignUpForm App")
+                var toastString = "Hello ".plus(nameField.text).plus(" welcome to the SignUpForm App")
                 val validInputToast = Toast.makeText(applicationContext, toastString, Toast.LENGTH_LONG)
                 validInputToast.show()
             }
