@@ -17,9 +17,6 @@ class FormActivity : AppCompatActivity() {
         val passwordFieldConfirm: EditText = findViewById<EditText>(R.id.passwordFieldConfirm)
 
         saveButton.setOnClickListener{
-            var pw: String = passwordField.text.toString()
-            var pwConfirm: String = passwordFieldConfirm.text.toString()
-
             var validFields: Boolean = CheckAllFields(nameField, emailField, passwordField, passwordFieldConfirm)
 
             if (validFields){
